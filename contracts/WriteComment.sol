@@ -1,12 +1,11 @@
 //SPDX-Liscense-Identifier: MIT
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.24;
+
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-
-
-//import "hardhat/console.sol";
+import "hardhat/console.sol";
 //import { Base64 } from "./libraries/Base64.sol";
 
 contract WriteComment is ERC1155i, Ownable {
@@ -54,6 +53,7 @@ contract WriteComment is ERC1155i, Ownable {
      console.log("An NFT w/ ID %s has been minted to %s", _tokenId, msg.sender);
     // it will be deleted after test
     return commentTokenId;
+    
     }
 
 }
